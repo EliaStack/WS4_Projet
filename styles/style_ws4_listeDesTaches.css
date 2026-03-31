@@ -55,22 +55,42 @@ header {
     align-items: center;
 }
 
+#dep{
+display: flex;
+justify-content: center;
+gap: 20px;
+
+}
+
+#detailsTaskinfo{
+    display: flex;
+    border: 2px rgba(0, 0, 0, 0.339) solid;
+    margin: 40px;
+    width: 400px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(201, 58, 58);
+}
 #tachesEnCours {
     display: flex;
     flex-direction: column;
     border: 2px rgba(0, 0, 0, 0.339) solid;
-    margin: 40px;
+    margin-left: 40px;
     border-radius: 10px;
     color: black;
     background-color: blue;
+
 }
 
 .t1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5px;
-    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
 }
 
 #tachesJS {
@@ -88,24 +108,43 @@ header {
 }
 
 /*//////////////// JS /////////////////////////*/
-
-
 .baliseNumProjet,
 .baliseSujet,
 .baliseDescription,
 .baliseDate,
-.baliseStatus{
+.baliseStatus {
+    display: flex;
+    flex-direction: row;
     margin: 10px;
+    gap: 5px;
 }
 
+.btn-details {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+}
 
+.baliseDetail{
+    margin-left: 10px;
+    font-size: 16px;
+}
 
+.pdetailTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+}
 
-
-
-
-
-
+#detailsTaskinfo{
+    display: flex;
+    flex-direction: column;
+}
 
 
 

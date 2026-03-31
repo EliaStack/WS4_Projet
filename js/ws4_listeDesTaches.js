@@ -39,11 +39,11 @@ fetch('http://localhost:3000/todos', {
             const baliseSujet = document.createElement('div');
             baliseSujet.classList.add('baliseSujet');
 
-            const baliseDescription = document.createElement('div');
-            baliseDescription.classList.add('baliseDescription');
-
-            const baliseDate = document.createElement('div');
-            baliseDate.classList.add('baliseDate');
+            /* const baliseDescription = document.createElement('div');
+             baliseDescription.classList.add('baliseDescription'); 
+ 
+             const baliseDate = document.createElement('div');
+             baliseDate.classList.add('baliseDate');*/
 
             const baliseStatus = document.createElement('div');
             baliseStatus.classList.add('baliseStatus');
@@ -56,6 +56,19 @@ fetch('http://localhost:3000/todos', {
             const numprojet = document.createElement('span');
             numprojet.textContent = project.id;
 
+            ////////// Concerne que le BP ////////// 
+            //Bouton affichage détails
+            const bpdetail = document.createElement('button');
+            bpdetail.classList.add('btn-details');
+            bpdetail.dataset.projectId = project.id
+
+            // bouton → image
+            const img = document.createElement('img');
+            img.src = '../images/bp plus.png';
+            img.alt = 'Voir détails';
+            bpdetail.appendChild(img);
+            ////////////////////////////////////
+
             //Text du sujet
             const textsujet = document.createElement('span');
             textsujet.textContent = 'Sujet : ';
@@ -64,21 +77,21 @@ fetch('http://localhost:3000/todos', {
             const sujet = document.createElement('span');
             sujet.textContent = project.text;
 
-            //Text de la description
-            const textdescription = document.createElement('span');
-            textdescription.textContent = 'Description : ';
-
-            //on créer p pour la description raccordé à "Tags" du serveur
-            const description = document.createElement('span');
-            description.textContent = project.Tags;
-
-            //Text date de création
-            const textdatecreation = document.createElement('span');
-            textdatecreation.textContent = 'Date de création : ';
-
-            //Date de création
-            const datecreation = document.createElement('span');
-            datecreation.textContent = project.created_at;
+            /* //Text de la description
+             const textdescription = document.createElement('span');
+             textdescription.textContent = 'Description : ';
+ 
+             //on créer p pour la description raccordé à "Tags" du serveur
+             const description = document.createElement('span');
+             description.textContent = project.Tags; 
+ 
+             //Text date de création
+             const textdatecreation = document.createElement('span');
+             textdatecreation.textContent = 'Date de création : '; 
+ 
+             //Date de création
+             const datecreation = document.createElement('span');
+             datecreation.textContent = project.created_at;*/
 
             //Text status
             const textstatus = document.createElement('span');
@@ -93,18 +106,19 @@ fetch('http://localhost:3000/todos', {
             baliseTachesJS.appendChild(baliseNumProjet);
             baliseNumProjet.appendChild(textnumprojet);
             baliseNumProjet.appendChild(numprojet);
+            baliseNumProjet.appendChild(bpdetail);
 
             baliseTachesJS.appendChild(baliseSujet);
             baliseSujet.appendChild(textsujet);
             baliseSujet.appendChild(sujet);
 
-            baliseTachesJS.appendChild(baliseDescription);
-            baliseDescription.appendChild(textdescription);
-            baliseDescription.appendChild(description);
-
-            baliseTachesJS.appendChild(baliseDate);
-            baliseDate.appendChild(textdatecreation);
-            baliseDate.appendChild(datecreation);
+            /*   baliseTachesJS.appendChild(baliseDescription);
+               baliseDescription.appendChild(textdescription);
+               baliseDescription.appendChild(description);
+   
+               baliseTachesJS.appendChild(baliseDate);
+               baliseDate.appendChild(textdatecreation);
+               baliseDate.appendChild(datecreation);*/
 
 
             baliseTachesJS.appendChild(baliseStatus);
@@ -115,6 +129,29 @@ fetch('http://localhost:3000/todos', {
             //Ajout de l'ensemble dans le html
             projectsContainer.appendChild(baliseTachesJS);
 
+            /*//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+            bpdetail.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                const detailsTask = document.querySelector('.detailsTask');
+
+                detailsTask.innerHTML = ''; // reset
+
+                //Création de la balise div avec la classe
+                const baliseDetail = document.createElement('div');
+                baliseDetail.classList.add('baliseDetail');
+
+                baliseDetail.innerHTML = `
+    <p><strong>Numéro :</strong> ${project.id}</p>
+    <p><strong>Description :</strong> ${project.Tags}</p>
+    <p><strong>Date :</strong> ${project.created_at}</p>
+    <p><strong>Status :</strong> ${project.is_complete}</p>
+  `;
+                //Association Parent/Enfant//
+                detailsTask.appendChild(baliseDetail);
+            })
+
         });
 
     });
@@ -122,10 +159,6 @@ fetch('http://localhost:3000/todos', {
 /* const a = document.createElement('a');
 a.textContent = 'Voir le projet';
 a.href = 'detailsTaches?id=' + project.id; //Lié à l'id u projet */
-
-
-
-
 
 
 
