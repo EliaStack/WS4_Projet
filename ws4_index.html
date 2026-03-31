@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page accueil</title>
+    <link rel="stylesheet" href="./styles/ws4_style_acceul.css">
+    <script src="./js/ws4_acceuil.js" defer></script>
+
+    <!-- Mise en commentaire pour le travail
+    <script src="./js/inscription.js" defer></script>
+    <script src="./js/connexion.js" defer></script> -->
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav-left">
+            <img src="../images/header/task_flow.png" alt="TaskFlow">
+            <span>TaskFlow</span>
+        </nav>
+
+        <nav class="nav-right">
+            <a href="./index.html"><img src="../images/header/accueil.png" alt="Accueil">Accueil</a>
+            <a href="./gestionDesTaches.html"><img src="../images/header/tache.png" alt="Tâches">Tâches</a>
+            <a href="./statistiques.html"><img src="../images/header/statistique.png"
+                    alt="Statistiques">Statistiques</a>
+            <a href="#" id="logout"><img src="../images/header/log_out.png" alt="déconnexion">Déconnexion</a>
+
+        </nav>
+
+
+    </header>
+
+    <div id="connexion">
+
+        <img id="image_connexion" src="../images/connexion/connexion.png" alt="logo connexion">
+        <h1>Connexion</h1>
+        <h2>Accédez à votre espace de gestion des tâches</h2>
+
+        <form id="formConnexion" action="">
+            <label class="fromText" for="prenom">Prenom</label>
+            <input id="formName" class="formContain" type="text" name="prenom" id="prenom" placeholder="Entrer votre prénom" required>
+            <label class="fromText" for="password">Password</label>
+            <input id="formPassword" class="formContain" type="password" name="passeword" id="password" placeholder="Mot de passe">
+            
+            <p id="errorConnexion"></p>
+            
+            <button type="submit" id="BpConnexion">Voir la liste des tâches</button>
+            <!-- <button type="submit" id="inscriptionSubmit">Inscription</button> -->
+        </form>
+        <!-- <button id="BplisteTache">Voir la liste des tâches</button> -->
+
+    </div>
+
+
+</body>
+
+</html>
