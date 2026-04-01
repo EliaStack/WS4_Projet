@@ -147,9 +147,24 @@ gap: 20px;
 }
 
 
+.TaskDelete{
+    display: flex;
+ 
+}
 
+.bpDelete{
+display: flex;
+gap: 15px;;
 
+}
 
+.Task{
+display: flex;
+gap: 15px;;
+
+}
+
+/*btnReouverture*/
 
 
 /* display: flex;
