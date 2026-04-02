@@ -1,51 +1,56 @@
-h1 {
-    color: black;
-}
-
-h2 {
-    color: gray;
-    font-size: 18px;
-}
-
 body {
     background-color: rgba(255, 228, 196, 0.849)
 }
 
 header {
+    background-image: url('../../images/Clarios_Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.textback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* === ALIGNEMENT DU LOGO TASKFLOW === */
+.taskflow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.task_back {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.task_back img {
+    height: 70px;
+}
+
+.task_back span {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+/* display: flex;
+    width: 5%;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-
-}
-
-.nav-left {
-    display: flex;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 30px;
-    align-items: center;
-    color: black;
-}
-
-.nav-right {
-    display: flex;
-    gap: 40px;
-    font-weight: normal;
-    font-size: 18px;
-    align-items: center;
-    border: 1px grey solid;
-    border-radius: 5px;
-}
-
-.nav-right a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    /* espace entre l’icône et le texte */
-    color: grey;
-    text-decoration: none;
-}
+    padding: 15px 30px;*/
 
 #BpConnexion {
     display: flex;

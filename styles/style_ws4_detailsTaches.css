@@ -1,55 +1,36 @@
-h1 {
-    color: black;
-}
-
-h2 {
-    color: gray;
-    font-size: 18px;
-}
-
 body {
-    display: flex;
-    background-color: rgba(255, 228, 196, 0.849);
-    align-items: center;
-    justify-content: space-between;
+    background-color: rgba(255, 228, 196, 0.849)
 }
 
 header {
+    background-image: url('../../images/Clarios_Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding-left: 20px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 
-.nav-left {
+.textback {
     display: flex;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 30px;
+    justify-content: center;
     align-items: center;
-    color: black;
-}
-
-.nav-right {
-    display: flex;
-    gap: 40px;
-    font-weight: normal;
-    font-size: 18px;
-    align-items: center;
-    border: 1px grey solid;
-    border-radius: 5px;
-}
-
-.nav-right a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    /* espace entre l’icône et le texte */
-    color: grey;
-    text-decoration: none;
+    color: white;
 }
 
 /*/////////////////////////////////////////*/
+#D {
+    display: flex;
+    justify-content: space-between;
+    gap: 10PX;
+
+}
+
+
 #tabl {
     display: flex;
     justify-content: center;
@@ -65,14 +46,6 @@ header {
 
 }
 
-#detailsTaskinfo {
-    display: flex;
-    border: 2px rgba(0, 0, 0, 0.339) solid;
-    width: 400px;
-    border-radius: 10px;
-    color: black;
-    background-color: rgb(201, 58, 58);
-}
 
 #tachesEnCours {
     display: flex;
@@ -148,12 +121,21 @@ header {
 #detailsTaskinfo {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 10px;
+    border: 2px rgba(0, 0, 0, 0.339) solid;
+    width: 400px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(201, 58, 58);
 }
 
-#bpRetour{
-      margin-right: 40px;  
+#bpRetour {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 40px;
+   justify-content: center;
 }
+
 /*///// BP TASK ///////////////////*/
 
 .btnReouverture,
@@ -172,8 +154,42 @@ header {
 .Task {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+/*//////////////////////// STATISTIQUE ////////////*/
+.StatGlobal{
+    display: flex;
+    flex-direction: column;
     gap: 15px;
 }
+
+.StatTaskEnCours{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.NbreTacheEnCours,
+.NbreTacheDone,
+.NbreTacheTotal
+{
+    display: flex;
+    border: 2px rgba(32.5, 20, 50.2) solid;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+ 
+
+}
+
+
+
+
+
+
+
+
+
 
 
 /* display: flex;
