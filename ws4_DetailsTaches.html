@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Détails de la tâche</title>
     <link rel="stylesheet" href="./styles/style_ws4_detailsTaches.css">
-    <script src="./js/ws4_detailsTaches.js" defer></script>
 
 </head>
 
 <body>
     <header>
-        <nav class="taskflow">
-            <div class="task_back">
-                <!-- <img src="../images/header/task_flow.png" alt="TaskFlow"> -->
-                <span class="textback">TaskFlow</span>
-            </div>
+
+        <span class="textback">TaskFlow</span>
+
+        <nav class="buttonNav">
+            <ul>
+                <li><a href="./ws4_statistiques.html">Statistique</a></li>
+                <li><a href="./ws4_index.html">Déconnexion</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -42,35 +44,14 @@
                 <!-- PROVIENT DU FICHIER JS -->
             </div>
         </section>
-
-        <!-- STATISTIQUE -->
-        <section class="StatGlobal">
-            <div class="StatTaskEnCours">
-
-                <div class="NbreTacheEnCours">
-
-                </div>
-
-                <div class="NbreTacheDone">
-
-                </div>
-
-                <div class="NbreTacheTotal">
-
-                </div>
-
-                <div class="graph">
-                    <!-- AJOUTER UN GRAPHIQUE -->
-                </div>
-            </div>
-
-        </section>
-
     </div>
 
     <a id="bpRetour" href="./ws4_listeDesTaches.html">
         <button>Retour</button>
     </a>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/ws4_detailsTaches.js"></script>
+
 
 </body>
 

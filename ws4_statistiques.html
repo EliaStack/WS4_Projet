@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques</title>
+    <link rel="stylesheet" href="./styles/style_ws4_statistique.css">
+</head>
+
+<body>
+    <header>
+
+        <span class="textback">TaskFlow</span>
+
+        <nav class="buttonNav">
+            <ul>
+                <li><a href="./ws4_statistiques.html">Statistique</a></li>
+                <li><a href="./ws4_index.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- STATISTIQUE -->
+    <section class="StatGlobal">
+        <div class="StatTaskEnCours">
+
+            <div class="NbreTacheEnCours">
+
+            </div>
+
+            <div class="NbreTacheDone">
+
+            </div>
+
+            <div class="NbreTacheTotal">
+
+            </div>
+
+            <div class="graph">
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div>
+        <a id="bpRetour" href="./ws4_listeDesTaches.html">
+            <button>Retour</button>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/ws4_statistique.js"></script>
+</body>
+
+</html>

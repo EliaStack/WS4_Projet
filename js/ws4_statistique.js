@@ -13,7 +13,7 @@ fetch('http://localhost:3000/todos', {
         const todolist = projects[0].todolist;
 
         updateStats(todolist);
-        
+
         /*// COMPTEUR TACHE EN COURS //*/
         const Count_TaskEnCours = Compteur_TaskEnCours(todolist);
         console.log('Nombre de tâches en cours :', Count_TaskEnCours);
@@ -82,7 +82,7 @@ fetch('http://localhost:3000/todos', {
 
 
         const stat_TaskTotal = document.querySelector('.NbreTacheTotal');
-        const baliseT_stat_TaskTotal= document.createElement('div');
+        const baliseT_stat_TaskTotal = document.createElement('div');
         const baliseImg_stat_TaskTotal = document.createElement('div');
 
         //Text tache complet
@@ -206,4 +206,40 @@ function updateStats(todolist) {
 
     stat_TaskTotal.appendChild(divTextTotal);
     stat_TaskTotal.appendChild(divImgTotal);
+
+
+    /*Donuts*/
+
+    const ctx = document.getElementById('myChart');
+    console.log('Hello');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: [
+                'Tâche terminées',
+                'Tâche en cours'           
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [CountTaskComplete, Count_TaskEnCours],
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+
+                ],
+                hoverOffset: 4
+            }]
+        }
+    });
+
+
+
+
+
+
+
+
 }
+
+
+
