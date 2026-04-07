@@ -1,0 +1,25 @@
+{
+  "name": "ws4_frontend",
+  "version": "1.0.0",
+  "description": "Name : WS4_Projet<br>\r Objective : Création d’interfaces dynamiques avec Javascript<br>\r Technologies used : HTML, CSS, JavaScript<br>\r Project Description : The client wants a system that allows them to track their employees' tasks. The project involves designing and developing the front-end portion of the application using HTML, CSS, and JavaScript, as well as creating desktop and mobile interface mockups. Is only the front-end part\r Link GitHub : https://github.com/EliaStack/WS4_Projet.git<br>\r Link Vercel : \r Prerequisites : server on http://localhost:3000/todos and folder \"totolist\" for the part back-end\r Installation : cd totolist and npm start",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliaStack/WS4_Projet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EliaStack/WS4_Projet/issues"
+  },
+  "homepage": "https://github.com/EliaStack/WS4_Projet#readme",
+  "dependencies": {
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0"
+  }
+}
