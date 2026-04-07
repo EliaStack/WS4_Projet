@@ -125,8 +125,19 @@ header {
 
 
 
-/* display: flex;
-    width: 5%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;*/
+/* MediaQuery*/
+@media screen and (max-width: 480px) {
+  #connexion {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h2{
+    text-align: center;
+  }
+}
+
+
+
+
+
+

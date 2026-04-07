@@ -169,7 +169,7 @@ a:active {
     display: flex;
     margin-top: 40px;
     margin-right: 40px;
-   justify-content: center;
+    justify-content: center;
 }
 
 /*///// BP TASK ///////////////////*/
@@ -189,10 +189,10 @@ a:active {
 
 button img {
     display: flex;
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  margin-right: 5px;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-right: 5px;
 }
 
 
@@ -203,13 +203,13 @@ button img {
 }
 
 /*//////////////////////// STATISTIQUE ////////////*/
-.StatGlobal{
+.StatGlobal {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.StatTaskEnCours{
+.StatTaskEnCours {
     display: flex;
     gap: 15px;
     flex-direction: column;
@@ -217,8 +217,7 @@ button img {
 
 .NbreTacheEnCours,
 .NbreTacheDone,
-.NbreTacheTotal
-{
+.NbreTacheTotal {
     display: flex;
     border: 2px rgba(32.5, 20, 50.2) solid;
     gap: 15px;
@@ -226,8 +225,25 @@ button img {
     padding: 10px;
 }
 
+/* MediaQuery*/
+@media screen and (max-width: 1700px) {
+    #D {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 
+    #detailsTaskinfo {
+        display: flex;
+        width: 300px;
+    }
 
+    .buttonNav {
+        display: flex;
+        text-align: right;
+    }
+}
 
 
 

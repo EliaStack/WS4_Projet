@@ -201,7 +201,6 @@ a:active {
 
 .StatTaskEnCours {
     display: flex;
-    gap: 15px;
     flex-direction: column;
     gap: 20px;
     width: 300px;
@@ -234,7 +233,38 @@ a:active {
     margin-right: 300px;
 }
 
+/* MediaQuery*/
+@media screen and (max-width: 1700px) {
+    .StatGlobal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
 
+    .graph {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    #myChart {
+        max-width: 320px;
+        width: 100%;
+        height: auto;
+    }
+
+    .StatTaskEnCours {
+        display: flex;
+        align-items: center;
+    }
+
+    .buttonNav {
+        display: flex;
+        text-align: right;
+    }
+}
 
 
 
