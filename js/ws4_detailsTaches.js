@@ -15,7 +15,7 @@ console.log(id);
 
 //Récupération des donnnées en f° de l'ID du projet
 function Recup_Data() {
-    fetch('https://ws4projetbackend-production.up.railway.app:8080/todos', {
+    fetch('https://ws4projetbackend-production.up.railway.app/todos', {
         headers: {
             /* MISE EN COMMENTAIRE CAUSE PROJET
             'Authorization': 'Bearer' + token */
