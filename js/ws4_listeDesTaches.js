@@ -65,7 +65,7 @@ fetch('https://ws4projetbackend-production.up.railway.app/todos', {
 
             // bouton → image
             const img = document.createElement('img');
-            img.src = '../images/bp plus.png';
+            img.src = '../images/bp_plus.png';
             img.alt = 'Voir détails';
             bpdetail.appendChild(img);
             ////////////////////////////////////
