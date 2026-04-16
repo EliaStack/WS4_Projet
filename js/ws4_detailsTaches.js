@@ -130,7 +130,7 @@ function Recup_Data() {
 
                     // bouton → image
                     const img_delete = document.createElement('img');
-                    img_delete.src = '../images/bp_delete.png';
+                    img_delete.src = 'images/bp_delete.png';
                     img_delete.alt = 'Suppression de la tâche';
                     bpdelete.appendChild(img_delete);
 
@@ -149,7 +149,7 @@ function Recup_Data() {
 
                     // bouton → image
                     const img_reopen = document.createElement('img');
-                    img_reopen.src = '../images/bp_modifier.png';
+                    img_reopen.src = 'images/bp_modifier.png';
                     img_reopen.alt = 'Réouverture de la tâche';
                     bpreopen.appendChild(img_reopen);
 
@@ -168,7 +168,7 @@ function Recup_Data() {
 
                     // bouton → image
                     const img_done = document.createElement('img');
-                    img_done.src = '../images/bp_done.png';
+                    img_done.src = 'images/bp_done.png';
                     img_done.alt = 'Réouverture de la tâche';
                     bpdone.appendChild(img_done);
 
@@ -319,7 +319,7 @@ function updateStats(todolist) {
     nbEnCours.textContent = Count_TaskEnCours + '/' + todolist.length;
 
     const imgEnCours = document.createElement('img');
-    imgEnCours.src = '../images/statistique/nbre_tache_faire.png';
+    imgEnCours.src = 'images/statistique/nbre_tache_faire.png';
     imgEnCours.alt = 'Tâches en cours';
 
     divTextEnCours.appendChild(textEnCours);
@@ -344,7 +344,7 @@ function updateStats(todolist) {
     nbDone.textContent = CountTaskComplete + '/' + todolist.length;
 
     const imgDone = document.createElement('img');
-    imgDone.src = '../images/statistique/nbr_tache_done.png';
+    imgDone.src = 'images/statistique/nbr_tache_done.png';
     imgDone.alt = 'Tâches terminées';
 
     divTextDone.appendChild(textDone);
@@ -369,7 +369,7 @@ function updateStats(todolist) {
     nbTotal.textContent = CountTaskTotal;
 
     const imgTotal = document.createElement('img');
-    imgTotal.src = '../images/statistique/nbre_tache_total.png';
+    imgTotal.src = 'images/statistique/nbre_tache_total.png';
     imgTotal.alt = 'Tâches total';
 
     divTextTotal.appendChild(textTotal);

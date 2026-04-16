@@ -48,7 +48,7 @@ function updateStats(todolist) {
     nbEnCours.textContent = Count_TaskEnCours + '/' + todolist.length;
 
     const imgEnCours = document.createElement('img');
-    imgEnCours.src = '../images/statistique/nbre_tache_faire.png';
+    imgEnCours.src = 'images/statistique/nbre_tache_faire.png';
     imgEnCours.alt = 'Tâches en cours';
 
     divTextEnCours.appendChild(textEnCours);
@@ -73,7 +73,7 @@ function updateStats(todolist) {
     nbDone.textContent = CountTaskComplete + '/' + todolist.length;
 
     const imgDone = document.createElement('img');
-    imgDone.src = '../images/statistique/nbr_tache_done.png';
+    imgDone.src = 'images/statistique/nbr_tache_done.png';
     imgDone.alt = 'Tâches terminées';
 
     divTextDone.appendChild(textDone);
@@ -98,7 +98,7 @@ function updateStats(todolist) {
     nbTotal.textContent = CountTaskTotal;
 
     const imgTotal = document.createElement('img');
-    imgTotal.src = '../images/statistique/nbre_tache_total.png';
+    imgTotal.src = 'images/statistique/nbre_tache_total.png';
     imgTotal.alt = 'Tâches total';
 
     divTextTotal.appendChild(textTotal);
